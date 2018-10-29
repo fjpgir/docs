@@ -20,8 +20,17 @@ A property is a member that provides a flexible mechanism to read, write, or com
   
 - The [value](../../../csharp/language-reference/keywords/value.md) keyword is used to define the value being assigned by the `set` accessor.  
 - Properties can be *read-write* (they have both a `get` and a `set` accessor), *read-only* (they have a `get` accessor but no `set` accessor), or *write-only* (they have a `set` accessor, but no `get` accessor). Write-only properties are rare and are most commonly used to restrict access to sensitive data.
-
-- Simple properties that require no custom accessor code can be implemented either as expression body definitions or as [auto-implemented properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).
+________________
+|Accesor|Get|Set|
+________________
+|Read And Write|Yes|Yes|
+________________________
+|Read-Only|Yes|No|
+________________________
+|Write-Only|No|Yes|
+________________________
+ 
+ - Simple properties that require no custom accessor code can be implemented either as expression body definitions or as [auto-implemented properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).
  
 ## Properties with backing fields
 
